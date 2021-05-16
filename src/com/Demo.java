@@ -28,8 +28,8 @@ public class Demo {
 
         try {
             simpleNullCheck(input1);
-        } catch (Exception NullPointerException) {
-            NullPointerException.printStackTrace();
+        } catch (Exception nullPointerException) {
+            nullPointerException.printStackTrace();
         }
 
         try (FileReader reader = new FileReader("notes3.txt")) {
