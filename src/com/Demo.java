@@ -10,11 +10,8 @@ public class Demo {
     }
 
     public static void main(String[] args) {
-
-        // TASK 1
         DemoClass demoClass = new DemoClass();
         String input1 = null;
-
         try {
             demoClass.methodA();
         } catch (ExeptionA exeptionA) {
@@ -25,13 +22,11 @@ public class Demo {
         } catch (ExeptionB exeptionB) {
             exeptionB.printStackTrace();
         }
-
         try {
             simpleNullCheck(input1);
         } catch (Exception nullPointerException) {
             nullPointerException.printStackTrace();
         }
-
         try (FileReader reader = new FileReader("notes3.txt")) {
             int c;
             while ((c = reader.read()) != -1) {
@@ -40,6 +35,5 @@ public class Demo {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-
     }
 }

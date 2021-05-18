@@ -6,9 +6,9 @@ public class Demo {
     }
 
     public static void someMethod2() throws Exception {
-//        throw new Exception();
         someMethod3();
     }
+
     public static void someMethod3() throws Exception {
         throw new Exception();
     }
